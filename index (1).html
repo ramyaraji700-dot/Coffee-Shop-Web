@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bean & Bloom is a neighborhood café for exceptional coffee, seasonal food, slow mornings, and good company.">
+    <meta property="og:title" content="Bean & Bloom Café — Thoughtfully Brewed">
+    <meta property="og:description" content="A quiet corner for exceptional coffee, slow mornings, and good company.">
+    <meta property="og:type" content="website">
+    
+    <title>Bean & Bloom Café — Thoughtfully Brewed</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER / NAVIGATION -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <div class="header-brand">
+                <span class="brand-logo">Bean & Bloom</span>
+            </div>
+            
+            <nav class="header-nav" id="headerNav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#visit" class="nav-link">Visit</a>
+            </nav>
+            
+            <button class="btn-primary header-cta">View Menu</button>
+            
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile navigation menu -->
+        <nav class="mobile-menu" id="mobileMenu">
+            <a href="#home" class="mobile-menu-link">Home</a>
+            <a href="#about" class="mobile-menu-link">About</a>
+            <a href="#menu" class="mobile-menu-link">Menu</a>
+            <a href="#visit" class="mobile-menu-link">Visit</a>
+            <button class="btn-primary mobile-menu-cta">View Menu</button>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Coffee, thoughtfully brewed.</h1>
+                <p class="hero-subtitle">A quiet corner for exceptional coffee, slow mornings, and good company.</p>
+                <div class="hero-ctas">
+                    <button class="btn-primary">Explore the Menu</button>
+                    <button class="btn-secondary">Visit Bean & Bloom</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&h=700&fit=crop" 
+                     alt="Specialty coffee being poured with latte art" 
+                     loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- BRAND STATEMENT / INTRO -->
+    <section class="intro">
+        <div class="intro-container">
+            <h2 class="intro-title">A little slower. A little better.</h2>
+            <p class="intro-text">Bean & Bloom is a neighborhood café built around good coffee, thoughtful food, and the simple pleasure of taking your time.</p>
+            <div class="intro-divider"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2 class="about-title">Made for slow mornings.</h2>
+                <p class="about-text">We believe the best café moments are rarely rushed. From the first pour of the morning to an afternoon catch-up, Bean & Bloom is a space to pause, settle in, and enjoy something made with care.</p>
+                <div class="about-details">
+                    <div class="detail-item">
+                        <h3 class="detail-label">Coffee</h3>
+                        <p class="detail-text">Carefully sourced beans from specialty roasters worldwide.</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3 class="detail-label">Ingredients</h3>
+                        <p class="detail-text">Fresh, seasonal ingredients in everything we make.</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3 class="detail-label">Atmosphere</h3>
+                        <p class="detail-text">A calm, welcoming space designed for presence and connection.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e6d8b189e?w=600&h=700&fit=crop" 
+                     alt="Cozy café interior with warm natural lighting and botanical plants" 
+                     loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- ORIGIN CALLOUT SECTION -->
+    <section class="origin">
+        <div class="origin-container">
+            <div class="origin-card">
+                <div class="origin-header">
+                    <h2 class="origin-title">From origin to cup.</h2>
+                </div>
+                <div class="origin-content">
+                    <div class="origin-spec">
+                        <span class="origin-label">Origin</span>
+                        <span class="origin-value">Colombia · Huila</span>
+                    </div>
+                    <div class="origin-spec">
+                        <span class="origin-label">Roast</span>
+                        <span class="origin-value">Light / Medium</span>
+                    </div>
+                    <div class="origin-spec">
+                        <span class="origin-label">Tasting Notes</span>
+                        <span class="origin-value">Caramel · Citrus · Cocoa</span>
+                    </div>
+                </div>
+                <p class="origin-description">A bright, balanced cup with soft citrus acidity and a lingering caramel sweetness.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="menu" id="menu">
+        <div class="menu-container">
+            <h2 class="menu-title">Something worth staying for.</h2>
+            
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="coffee">Coffee</button>
+                <button class="filter-btn" data-filter="tea">Tea</button>
+                <button class="filter-btn" data-filter="food">Food</button>
+            </div>
+            
+            <div class="menu-items" id="menuItems">
+                <!-- Coffee Items -->
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Espresso</h3>
+                        <p class="menu-item-price">₹140</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Americano</h3>
+                        <p class="menu-item-price">₹150</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Cappuccino</h3>
+                        <p class="menu-item-price">₹180</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Flat White</h3>
+                        <p class="menu-item-price">₹190</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Café Latte</h3>
+                        <p class="menu-item-price">₹190</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Cold Brew</h3>
+                        <p class="menu-item-price">₹210</p>
+                    </div>
+                </div>
+                
+                <!-- Tea Items -->
+                <div class="menu-item" data-category="tea">
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Masala Chai</h3>
+                        <p class="menu-item-price">₹140</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="tea">
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Matcha Latte</h3>
+                        <p class="menu-item-price">₹220</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="tea">
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Hibiscus Iced Tea</h3>
+                        <p class="menu-item-price">₹180</p>
+                    </div>
+                </div>
+                
+                <!-- Food Items -->
+                <div class="menu-item" data-category="food">
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Butter Croissant</h3>
+                        <p class="menu-item-price">₹160</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="food">
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Almond Croissant</h3>
+                        <p class="menu-item-price">₹210</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="food">
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Avocado Toast</h3>
+                        <p class="menu-item-price">₹280</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="food">
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Mushroom & Cheese Toastie</h3>
+                        <p class="menu-item-price">₹290</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="food">
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Seasonal Cake</h3>
+                        <p class="menu-item-price">₹220</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED SPECIAL SECTION -->
+    <section class="featured">
+        <div class="featured-container">
+            <div class="featured-label">This season</div>
+            <h2 class="featured-title">Honey Cinnamon Latte</h2>
+            <p class="featured-description">Espresso, steamed milk, wildflower honey, and a touch of cinnamon. Warm, fragrant, and quietly indulgent.</p>
+            <a href="#menu" class="featured-cta">Try the seasonal menu →</a>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <h2 class="testimonials-title">Good coffee. Good company.</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <blockquote class="testimonial-quote">
+                        "The kind of café you find once and immediately want to keep to yourself."
+                    </blockquote>
+                    <p class="testimonial-author">— Ananya</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <blockquote class="testimonial-quote">
+                        "Beautiful coffee, lovely food, and the calmest little corner in the neighborhood."
+                    </blockquote>
+                    <p class="testimonial-author">— Meera</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <blockquote class="testimonial-quote">
+                        "Everything feels considered, from the coffee to the last detail on the table."
+                    </blockquote>
+                    <p class="testimonial-author">— Arjun</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ATMOSPHERE / IMAGES SECTION -->
+    <section class="atmosphere">
+        <div class="atmosphere-container">
+            <div class="atmosphere-grid">
+                <div class="atmosphere-image">
+                    <img src="https://images.unsplash.com/photo-1497636577773-f1231844b336?w=600&h=500&fit=crop" 
+                         alt="Freshly poured latte with latte art" 
+                         loading="lazy">
+                </div>
+                <div class="atmosphere-image">
+                    <img src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?w=600&h=500&fit=crop" 
+                         alt="Pastries and coffee on a café table" 
+                         loading="lazy">
+                </div>
+                <div class="atmosphere-image">
+                    <img src="https://images.unsplash.com/photo-1457521033206-137a0520e519?w=600&h=500&fit=crop" 
+                         alt="Café interior with warm lighting and plants" 
+                         loading="lazy">
+                </div>
+                <div class="atmosphere-image">
+                    <img src="https://images.unsplash.com/photo-1509785307050-d4066910ec1e?w=600&h=500&fit=crop" 
+                         alt="Coffee beans close-up" 
+                         loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISIT / CONTACT SECTION -->
+    <section class="visit" id="visit">
+        <div class="visit-container">
+            <h2 class="visit-title">Come by sometime.</h2>
+            
+            <div class="visit-content">
+                <div class="visit-info">
+                    <div class="info-block">
+                        <h3 class="info-label">Bean & Bloom Café</h3>
+                        <p class="info-text">24 Garden Street<br>Chennai, Tamil Nadu</p>
+                    </div>
+                    
+                    <div class="info-block">
+                        <h3 class="info-label">Hours</h3>
+                        <p class="info-text">Monday – Friday<br>8:00 AM – 8:00 PM<br><br>Saturday – Sunday<br>8:30 AM – 9:00 PM</p>
+                    </div>
+                    
+                    <div class="info-block">
+                        <h3 class="info-label">Contact</h3>
+                        <p class="info-text">
+                            <a href="tel:+919876543210" class="info-link">+91 98765 43210</a><br>
+                            <a href="mailto:hello@beanandbloom.com" class="info-link">hello@beanandbloom.com</a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="visit-cta-section">
+                    <a href="https://maps.google.com/?q=24+Garden+Street+Chennai" target="_blank" class="btn-secondary">Get Directions →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <h2 class="newsletter-title">A little bloom in your inbox.</h2>
+            <p class="newsletter-subtitle">Seasonal specials, new beans, café notes, and the occasional excuse to stop by.</p>
+            
+            <form class="newsletter-form" id="newsletterForm" novalidate>
+                <input 
+                    type="email" 
+                    class="newsletter-input" 
+                    placeholder="Your email address" 
+                    required
+                    aria-label="Email address">
+                <button type="submit" class="btn-primary newsletter-btn">Join the list</button>
+                <div class="newsletter-message" id="newsletterMessage"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2 class="footer-brand-name">Bean & Bloom</h2>
+                <p class="footer-tagline">Coffee, food & quiet moments.</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="https://instagram.com" target="_blank" class="footer-link">Instagram</a>
+                <a href="#menu" class="footer-link">Menu</a>
+                <a href="#visit" class="footer-link">Visit</a>
+                <a href="#visit" class="footer-link">Contact</a>
+            </div>
+            
+            <div class="footer-copyright">
+                <p>&copy; 2026 Bean & Bloom Café. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
